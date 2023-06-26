@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Container{
+  display: flex;
+  align-items: center;
+  padding: 30px 25px;
+}
+
+.Container_image{
+width: 28.93px;
+height: 28.93px;
+left: 26px;
+top: 31px;
+margin-right:10px;
+border: 1px solid #000000;
+}
+
+
+.Container_heading1 {
+margin-right:auto;
+width: 122.39px;
+height: 22.25px;
+left: 61.61px;
+top: 31px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22.2535px;
+line-height: 27px;
+letter-spacing: -0.05em;
+
+color: #60d9fb;
+}
+
+main{
+  padding: 25px 27px;
+  background-image: url("../public/images/react-icon-light.png");
+  background-repeat: no-repeat; /* Specifies if the image should repeat or not */
+  background-position: right 30%; /* Specifies the position of the background image */
+  mix-blend-mode: lighten;
+  height:450px;
+  background-color: white;
+}
+
+.Main_h1 {
+  width: 424px;
+  height: 41px;
+  left: 27px;
+  top: 148px;
+  margin:0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39.06px;
+  line-height: 47px;
+  letter-spacing: -0.05em;
+
+}
+
+.Main_li{
+  width: 390px;
+  height: 19.51px;
+  left: 74px;
+  top: 273.17px;
+  padding: 10px 74px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.Main_li>li::marker{
+    font-size: 1.4rem;
+    color:#60d9fb;
+}
+
+.Main_li>li{
+  margin-bottom: 20px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+}
+
+.text-left{
+  padding: 5px;
+  color: #2B283A;
+}
+
+.text-right{
+  padding: 5px;
+  color: #D5D4D8;
+}
+
+.slider {
+  flex-shrink: 0;
+  width: 40px;
+  height: 20px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 0 5px;
+  position: relative;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .slider {
+  background-color: white;
+}
+
+input[type="checkbox"]:checked + .slider:before {
+  transform: translateX(20px);
+  background-color: black;
+}
+
+main.Dark{
+  background-image: url("../public/images/react-icon-dark.png"); 
+  background-color: #282D35;
+  color: white;
+}
+
+.Dark{
+    background-color: #21222A;
+}
+
+.Dark.text-left{
+  color: #918E9B;
+}
+
+.Dark.text-right{
+  color: #FFFFFF;
+}
